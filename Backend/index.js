@@ -17,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
+<<<<<<< HEAD
     origin: [
         "http://localhost:5173",
         "https://jobfinder-steel-two.vercel.app"
@@ -24,6 +25,11 @@ const corsOptions = {
     credentials: true
 };
 
+=======
+    origin:'http://localhost:5173',
+    credentials:true
+}
+>>>>>>> 094557540e90d7c3cec5e4776cdb487cd47623e5
 app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 4000
